@@ -3,7 +3,7 @@ var totalSeconds = 0;
     ? ((checkMe(getCookie('token'))), (document.getElementsByClassName("login")[0].style.display = "none"), (document.getElementsByClassName("contents")[0].style.display = "block"))
     : ((document.getElementsByClassName("contents")[0].style.display = "none"), (document.getElementsByClassName("login")[0].style.display = "block"));
 */
-document.getElementById("content").style.display = "none";
+// document.getElementById("content").style.display = "none";
 let button = document.getElementById("index_link");
 function setCookie(e, t, n) {
     const o = new Date();
