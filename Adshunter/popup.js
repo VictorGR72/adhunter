@@ -3,7 +3,7 @@ var totalSeconds = 0;
     ? ((checkMe(getCookie('token'))), (document.getElementsByClassName("login")[0].style.display = "none"), (document.getElementsByClassName("contents")[0].style.display = "block"))
     : ((document.getElementsByClassName("contents")[0].style.display = "none"), (document.getElementsByClassName("login")[0].style.display = "block"));
 */
-// document.getElementById("content").style.display = "none";
+document.getElementById("content").style.display = "none";
 let button = document.getElementById("index_link");
 function setCookie(e, t, n) {
     const o = new Date();
@@ -91,12 +91,12 @@ button.addEventListener("click", function () {
         n.setRequestHeader("Accept", "application/json"),
         n.send("email=" + e + "&password=" + t);
 }),
-/*
-    document.getElementById("login").addEventListener("click", function () {
-     document.getElementsByClassName("login")[0].style.display = "none";
-     document.getElementsByClassName("contents")[0].style.display = "block";
-}),
-*/
+
+//     document.getElementById("login").addEventListener("click", function () {
+//      document.getElementsByClassName("login")[0].style.display = "none";
+//      document.getElementsByClassName("contents")[0].style.display = "block";
+// }),
+
     chrome.runtime.onMessage.addListener(function (e) {
         if (e.countQtd)  document.getElementById("count").textContent = e.countQtd;
     });

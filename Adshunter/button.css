@@ -32,21 +32,51 @@ a {
     text-align: right;
     }
 
-.funcionalidade {
-        text-align: center;
+.login {
+    margin: 0;
+    padding: 0;
 }
 
-.funcionalidade a {
+.btn {
+    background-color: rgb(160, 81, 202);
+    border-color: rgb(160, 81, 202);
+}
+
+.btn:hover {
+    background-color: rgb(60, 9, 90);
+    border-color: rgb(60, 9, 90);
+}
+
+.conteudo {
+    padding: 15px;
+}
+
+.contents {
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.contents h1 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.ferramentas-content a {
+    padding: 15px 25px;
+    background-color: rgb(160, 81, 202);
+    border: 1px solid rgb(160, 81, 202);
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
     color: #fff;
-    padding: 10px 15px;
-    background-color: rgb(62, 19, 87);
-    border: 1px solid rgb(47, 8, 69);
-    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.funcionalidade p {
-    margin-top: 10px;
+.ferramentas-content a:hover {
+    background-color: rgb(60, 9, 90);
+    border-color: rgb(60, 9, 90);
+}
+
+.ferramentas-content p {
+    margin-top: 25px;
 }
